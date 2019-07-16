@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+        <EditText
+            android:id="@+id/IDtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="아이디를 입력해주세요."
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/overlDButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:text="ID 중복 검사" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="User Password" />
+
+        <EditText
+            android:id="@+id/PWtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력해주세요."
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/PWtxtchk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="똑같이 한번 더 입력해주세요."
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="User Name" />
+
+        <EditText
+            android:id="@+id/Nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="User Job" />
+
+        <Spinner
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Jobtxt"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="학과 및 자격증" />
+
+        <Spinner
+            android:id="@+id/cgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/certName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+         <Button
+             android:id="@+id/registerMemberButton"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#1CB0D3"
+             android:text="회원가입" />
+
+          </LinearLayout>
+    </ScrollView>
+</LinearLayout>
